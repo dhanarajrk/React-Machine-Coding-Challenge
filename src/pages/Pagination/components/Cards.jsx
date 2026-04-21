@@ -6,6 +6,7 @@ export const Cards = ({ items }) => {
         {items.map((item, index) => (
             <Card key={index}
                   title={item.title}
+                  price={item.price}
                   thumbnail={item.thumbnail}/>
         ))}
     </div>
