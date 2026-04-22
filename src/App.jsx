@@ -4,6 +4,8 @@ import './App.css'
 import { Kanban } from './pages/Kanban Style Todolist (Drag and Drop)/Kanban';
 import { Pagination } from './pages/Pagination/Pagination';
 import { StarRating } from './pages/Star Rating/StarRating';
+import { DebounceSearchUseRef } from './pages/Debounce Search (using useRef)/DebounceSearchUseRef';
+import { DebounceSearchCustomHook } from './pages/Debounce Search (using customHook)/DebounceSearchCustomHook';
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
         <Link to="/kanban"><button>Kanban Tasks (Drag and Drop)</button></Link>
         <Link to="/pagination"><button>Pagination</button></Link>
         <Link to="/star-rating"><button>Star Rating</button></Link>
+        <Link to="/debounce-search-useref"><button>Debounce Search (using useRef)</button></Link>
+        <Link to="/debounce-search-customhook"><button>Debounce Search (using customHook)</button></Link>
       </nav>
 
       {/* Page Routing */}
@@ -23,6 +27,8 @@ function App() {
         <Route path="/kanban" element={<Kanban/>} />
         <Route path="/pagination" element={<Pagination/>} />
         <Route path="/star-rating" element={<StarRating/>} />
+        <Route path="/debounce-search-useref" element={<DebounceSearchUseRef/>} />
+        <Route path="/debounce-search-customhook" element={<DebounceSearchCustomHook/>} />
       </Routes>
 
     </div>
