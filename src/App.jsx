@@ -7,6 +7,7 @@ import { StarRating } from './pages/Star Rating/StarRating';
 import { DebounceSearchUseRef } from './pages/Debounce Search (using useRef)/DebounceSearchUseRef';
 import { DebounceSearchCustomHook } from './pages/Debounce Search (using customHook)/DebounceSearchCustomHook';
 import { ThrottlePage } from './pages/Throttle/ThrottlePage';
+import { InfiniteScroll } from './pages/Infinite Scroll/InfiniteScroll';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Link to="/debounce-search-useref"><button>Debounce Search (using useRef)</button></Link>
         <Link to="/debounce-search-customhook"><button>Debounce Search (using customHook)</button></Link>
         <Link to="/throttle"><button>Throttle</button></Link>
+        <Link to="/infinite-scroll"><button>Infinite Scroll</button></Link>
       </nav>
 
       {/* Page Routing */}
@@ -32,6 +34,7 @@ function App() {
         <Route path="/debounce-search-useref" element={<DebounceSearchUseRef/>} />
         <Route path="/debounce-search-customhook" element={<DebounceSearchCustomHook/>} />
         <Route path="/throttle" element={<ThrottlePage/>} />
+        <Route path="/infinite-scroll" element={<InfiniteScroll/>} />
       </Routes>
     </div>
   );

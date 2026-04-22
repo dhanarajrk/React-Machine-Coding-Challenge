@@ -11,3 +11,7 @@ export function throttle(fn, delay) { //Takes fn=expensive function and delay as
     }
     //Otherwise it will just ignore to call the expensive fn(...args) if delay is not yet passed.
 }
+
+//THROTTLE VS DEBOUNCE
+//THROTTLE: It limits the number of times a function can be called in a given time period. So it takes decision based on lastCall time and current time. If the difference is greater than or equal to the specified delay, it allows the function to be executed and updates the lastCall time. If the difference is less than the delay, it ignores the function call. This means that the function will be executed at most once every specified delay period, regardless of how many times it is triggered.
+//DEBOUNCE: It delays the execution of a function until a certain amount of time has passed. So it cleans up previous timeout immediately when new call comes in and sets a new timeout. If the function is called again before the timeout has completed, the previous timeout is cleared and a new one is set. This means that the function will only be executed after a certain amount of time has passed since the last time it was called, effectively "debouncing" rapid calls to the function.
