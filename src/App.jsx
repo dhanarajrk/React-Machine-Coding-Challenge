@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       {/* Navigation Buttons */}
-      <nav style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
+      <nav style={{ display: "flex", gap: "10px", margin: "20px" }}>
         <Link to="/timer"><button>Timer (useEffect setInterval Cleanup)</button></Link>
         <Link to="/kanban"><button>Kanban Tasks (Drag and Drop)</button></Link>
         <Link to="/pagination"><button>Pagination</button></Link>
