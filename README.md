@@ -1,5 +1,7 @@
 ![Demo](./src/assets/readme-gif.gif)
 
-## Improving my React skills with interview-style coding challenges.
+## React Coding Challenges
 
-Feel free to try them out too! :)
+Just improving myself with React coding challenges for interviews.
+
+You can try them out too!!
