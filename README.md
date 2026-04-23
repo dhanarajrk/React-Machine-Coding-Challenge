@@ -1,4 +1,4 @@
-![Demo](./assets/readme-gif.gif)
+![Demo](./src/assets/readme-gif.gif)
 
 ## Improving my React skills with interview-style coding challenges.
 
