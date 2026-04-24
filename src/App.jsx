@@ -11,6 +11,7 @@ import { InfiniteScroll } from './pages/Infinite Scroll/InfiniteScroll';
 import { Autocomplete } from './pages/Autocomplete/Autocomplete';
 import { ReactQuery_useQuery } from './pages/React Query (useQuery)/ReactQuery_useQuery';
 import { ReactQuery_useMutation } from './pages/React Query (useMutation)/ReactQuery_useMutation';
+import { AbortApiCall } from './pages/Abort Api Call/AbortApiCall';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Link to="/autocomplete"><button>Autocomplete</button></Link>
         <Link to="/react-query-usequery"><button>React Query (useQuery)</button></Link>
         <Link to="/react-query-usemutation"><button>React Query (useMutation)</button></Link>
+        <Link to="/abort-api-call"><button>Abort API Call</button></Link>
       </nav>
 
       {/* Page Routing */}
@@ -44,6 +46,7 @@ function App() {
         <Route path="/autocomplete" element={<Autocomplete/>} />
         <Route path="/react-query-usequery" element={<ReactQuery_useQuery/>} />
         <Route path="/react-query-usemutation" element={<ReactQuery_useMutation/>} />
+        <Route path="/abort-api-call" element={<AbortApiCall/>} />
       </Routes>
     </div>
   );
