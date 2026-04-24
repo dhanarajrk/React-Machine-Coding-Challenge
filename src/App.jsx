@@ -9,6 +9,7 @@ import { DebounceSearchCustomHook } from './pages/Debounce Search (using customH
 import { ThrottlePage } from './pages/Throttle/ThrottlePage';
 import { InfiniteScroll } from './pages/Infinite Scroll/InfiniteScroll';
 import { Autocomplete } from './pages/Autocomplete/Autocomplete';
+import { ReactQuery_useQuery } from './pages/React Query (useQuery)/ReactQuery_useQuery';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Link to="/throttle"><button>Throttle</button></Link>
         <Link to="/infinite-scroll"><button>Infinite Scroll</button></Link>
         <Link to="/autocomplete"><button>Autocomplete</button></Link>
+        <Link to="/react-query-usequery"><button>React Query (useQuery)</button></Link>
       </nav>
 
       {/* Page Routing */}
@@ -38,6 +40,7 @@ function App() {
         <Route path="/throttle" element={<ThrottlePage/>} />
         <Route path="/infinite-scroll" element={<InfiniteScroll/>} />
         <Route path="/autocomplete" element={<Autocomplete/>} />
+        <Route path="/react-query-usequery" element={<ReactQuery_useQuery/>} />
       </Routes>
     </div>
   );
