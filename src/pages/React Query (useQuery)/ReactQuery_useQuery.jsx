@@ -24,7 +24,7 @@ export const ReactQuery_useQuery = () => {
 
     return (
         <div>
-            <h2>React Query (useQuery) is used when fetching data from an API (for GET)</h2>
+            <h2>React Query useQuery() is used when fetching data from an API (for GET)</h2>
             <h5>It eliminates the need for useState, useEffect, and can control when to call the API</h5>
             <h5>It will not automatically refetch data until the queryKey changes (This is a basic caching in React Query). You can check in Network tab of browser dev tools to see when API calls are made.</h5>
             <h5>However you can use useQuery's refetch function to manually trigger a refetch regardless of the key changes or staleTime</h5>

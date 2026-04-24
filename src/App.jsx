@@ -10,6 +10,7 @@ import { ThrottlePage } from './pages/Throttle/ThrottlePage';
 import { InfiniteScroll } from './pages/Infinite Scroll/InfiniteScroll';
 import { Autocomplete } from './pages/Autocomplete/Autocomplete';
 import { ReactQuery_useQuery } from './pages/React Query (useQuery)/ReactQuery_useQuery';
+import { ReactQuery_useMutation } from './pages/React Query (useMutation)/ReactQuery_useMutation';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Link to="/infinite-scroll"><button>Infinite Scroll</button></Link>
         <Link to="/autocomplete"><button>Autocomplete</button></Link>
         <Link to="/react-query-usequery"><button>React Query (useQuery)</button></Link>
+        <Link to="/react-query-usemutation"><button>React Query (useMutation)</button></Link>
       </nav>
 
       {/* Page Routing */}
@@ -41,6 +43,7 @@ function App() {
         <Route path="/infinite-scroll" element={<InfiniteScroll/>} />
         <Route path="/autocomplete" element={<Autocomplete/>} />
         <Route path="/react-query-usequery" element={<ReactQuery_useQuery/>} />
+        <Route path="/react-query-usemutation" element={<ReactQuery_useMutation/>} />
       </Routes>
     </div>
   );
