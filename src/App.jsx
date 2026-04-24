@@ -12,13 +12,14 @@ import { Autocomplete } from './pages/Autocomplete/Autocomplete';
 import { ReactQuery_useQuery } from './pages/React Query (useQuery)/ReactQuery_useQuery';
 import { ReactQuery_useMutation } from './pages/React Query (useMutation)/ReactQuery_useMutation';
 import { AbortApiCall } from './pages/Abort Api Call/AbortApiCall';
+import { AbortApiCallReactQuery } from './pages/Abort Api Call (using ReactQuery)/AbortApiCallReactQuery';
 
 function App() {
 
   return (
     <div className="App">
       {/* Navigation Buttons */}
-      <nav style={{ display: "flex", gap: "10px", margin: "20px" }}>
+      <nav style={{ display: "flex", flexWrap: "wrap", gap: "10px", margin: "20px" }}>
         <Link to="/timer"><button>Timer (useEffect setInterval Cleanup)</button></Link>
         <Link to="/kanban"><button>Kanban Tasks (Drag and Drop)</button></Link>
         <Link to="/pagination"><button>Pagination</button></Link>
@@ -31,6 +32,7 @@ function App() {
         <Link to="/react-query-usequery"><button>React Query (useQuery)</button></Link>
         <Link to="/react-query-usemutation"><button>React Query (useMutation)</button></Link>
         <Link to="/abort-api-call"><button>Abort API Call</button></Link>
+        <Link to="/abort-api-call-react-query"><button>Abort API Call (using ReactQuery)</button></Link>
       </nav>
 
       {/* Page Routing */}
@@ -47,6 +49,7 @@ function App() {
         <Route path="/react-query-usequery" element={<ReactQuery_useQuery/>} />
         <Route path="/react-query-usemutation" element={<ReactQuery_useMutation/>} />
         <Route path="/abort-api-call" element={<AbortApiCall/>} />
+        <Route path="/abort-api-call-react-query" element={<AbortApiCallReactQuery/>} />
       </Routes>
     </div>
   );
